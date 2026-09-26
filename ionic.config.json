@@ -1,0 +1,7 @@
+{
+  "name": "pgpbl-ionic-2026",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
