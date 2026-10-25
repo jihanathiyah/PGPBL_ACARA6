@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/maps"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Edit Point</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-padding">
+
+    <ion-item>
+      <ion-label position="stacked">Name</ion-label>
+      <ion-input
+        [(ngModel)]="name"
+        placeholder="Masukkan nama point">
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Coordinates</ion-label>
+      <ion-input
+        [(ngModel)]="coordinates"
+        placeholder="Latitude, Longitude">
+      </ion-input>
+    </ion-item>
+
+    <div
+      id="mapedit"
+      style="height: 350px; width: 100%; margin-top: 16px;">
+    </div>
+
+    <ion-button
+      expand="block"
+      (click)="save()"
+      class="ion-margin-top">
+      Save
+    </ion-button>
+
+  </div>
+</ion-content>
